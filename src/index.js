@@ -1,12 +1,5 @@
-import App from "./App.js"
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
 
-const hello = name => {
-  console.log(`hello ${name}`)
-}
-
-hello('him')
-
-const div = document.querySelector('#root')
-const p = document.createElement("p")
-p.textContent = App()
-div.appendChild(p)
+ReactDOM.createRoot(document.getElementById('root')).render(<App />)
